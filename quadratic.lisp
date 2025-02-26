@@ -1,6 +1,6 @@
 ;; x^2 - 6x + 4 = 0 denkleminin köklerini hesaplama
 (defun solve-quadratic (a b c)
-  (let* ((discriminant (- (* b b) (* 4 a c)))
+  (let* ((discriminant (- (* b b) (* 4 a c))) ;; let yerine let* kullandık, cunku birbirine bagimli degiskenler let* ile 
          (root1 (/ (+ (- b) (sqrt discriminant)) (* 2 a)))
          (root2 (/ (- (- b) (sqrt discriminant)) (* 2 a))))
     (list root1 root2)))
